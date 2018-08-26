@@ -53,6 +53,10 @@
         :onClick="selectContact"
         :contacts="contacts"
       />
+      <!-- Close panel -->
+      <div class="panel__close" v-on:click="toggleTransferPanel()">
+        <i class="material-icons">close</i>
+      </div>
     </div>
 
     <!-- Completed transfer, hidden by default -->
@@ -63,11 +67,6 @@
           check_circle_outline
         </i>
       </div>
-    </div>
-
-    <!-- Close panel -->
-    <div class="panel__close" v-on:click="toggleTransferPanel()">
-      <i class="material-icons">close</i>
     </div>
   </div>
 </template>

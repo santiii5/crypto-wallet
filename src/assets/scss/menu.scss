@@ -5,6 +5,7 @@
   max-height: 100%;
   flex: 0 0 220px;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
 
   &.collapsed {
