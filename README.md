@@ -65,6 +65,6 @@ There are still some TODOs to solve, but the main functionalities are fully work
 - 05:45 - Develop the main functionalities
 - 03:50 - Visual styles & layout
 - 03:10 - Refactor, clean
-- 00:45 - Build, readme, upload to server, test
+- 00:55 - Build, readme, upload to server, test
 
-Total time: **15:40** hours
+Total time: **15:50** hours
