@@ -1,0 +1,153 @@
+#transfer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  transition: 0.2s ease all;
+  transform: translateY(-100%);
+  z-index: 8;
+
+  &.opened {
+    transform: translateY(0);
+    box-shadow: $box_shadow;
+  }
+}
+
+.panel__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $grey_4;
+  height: 35px;
+  width: 35px;
+  transition: 0.2s ease all;
+
+  i {
+    line-height: 35px;
+    font-size: 18px;
+    transition: 0.2s ease all;
+  }
+
+  &:hover {
+    background-color: $turquoise;
+  }
+}
+
+.form {
+  display: table;
+  margin: 0 auto;
+}
+
+  .form__group {
+    display: table-cell;
+    padding: 15px;
+    position: relative;
+
+    input,
+    label {
+      display: block;
+      font-size: 16px;
+    }
+
+    label {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+
+  .form__address {
+    text-align: left;
+
+    input {
+      width: 550px;
+    }
+
+    .valid__icon {
+      position:  absolute;
+      right: 25px;
+      top: 73px;
+      text-align: right;
+
+      span {
+        margin-top: 15px;
+        display: block;
+        font-size: 12px;
+      }
+    }
+
+    &.address--valid {
+      input {
+        border-color: $green;
+      }
+
+      .valid__icon {
+        color: $green;
+      }
+    }
+
+    &.address--error {
+      input {
+        border-color: $red_warning;
+      }
+      .valid__icon {
+        color: $red_warning;
+      }
+    }
+  }
+
+  .contacts__show {
+    i {
+      font-size: 15px;
+      margin-left: 5px;
+      vertical-align: top;
+    }
+  }
+
+  .form__amount {
+
+    label, input {
+      text-align: right;
+    }
+
+    input {
+      width: 80px;
+    }
+  }
+
+  .for__submit {
+
+    button {
+      transform: translateY(45px);
+    }
+  }
+
+.transfer__completed {
+  margin: 120px 0 60px 0;
+  font-size: 22px;
+  color: $green_dark;
+
+  &.active {
+    transform: translateY(0);
+  }
+}
+
+  .completed__content {
+    transition: 2s ease all;
+    transform: translateY(-100%);
+
+    i {
+      font-size: 35px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }

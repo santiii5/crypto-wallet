@@ -1,0 +1,112 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'GothamPro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9ef;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a, li {
+  transition: 0.2s ease all;
+}
+
+input {
+  padding: 12px;
+  box-shadow: none;
+  border: 1px solid $grey_2;
+  border-radius: 3px;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+  border-color: $grey_1;
+  outline: 0 none;
+}
+
+// Turn off arrows on number inputs
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  flex: 1;
+  min-width: 950px;
+}
+
+.green {
+  color: $green;
+}
+
+.green_dark {
+  color: $green_dark;
+}
+
+.red {
+  color: $red;
+}
+
+.red_warning {
+  color: $red_warning;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: $green_dark;
+  color: white;
+  transition: 0.2s ease all;
+  font-size: 14px;
+
+  &:not(:disabled):hover {
+    color: $black_2;
+    background-color: $turquoise;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: $grey_3;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+  .btn--small {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .btn--big {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+  .btn--grey {
+    color: $black_1;
+    background-color: $grey_4;
+  }
+
+  .btn--yellow {
+    color: $black_1;
+    background-color: $yellow;
+  }

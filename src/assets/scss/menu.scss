@@ -1,0 +1,91 @@
+#panel {
+  background-color: $black_1;
+  color: white;
+  height: 100vh;
+  max-height: 100%;
+  flex: 0 0 220px;
+  position: sticky;
+  top: 0;
+
+  &.collapsed {
+    flex: 0 0 60px;
+
+    ul li,
+    .logo,
+    .menu__switch {
+      text-align: center;
+    }
+
+    .menu__switch {
+      float: none;
+    }
+  }
+
+  &.collapsed,
+  &:hover {
+    .menu__switch i {
+      opacity: 1;
+    }
+  }
+  &:not(.collapsed):hover {
+    .menu__switch i {
+      transform: translateX(-5px);
+    }
+  }
+}
+
+  .logo {
+    padding-top: 60px;
+    margin-bottom: 120px;
+    text-align: left;
+
+    img {
+      max-width: 120px;
+    }
+  }
+
+  .menu__switch {
+    margin-top: 50px;
+    float: right;
+    cursor: pointer;
+
+    i {
+      opacity: 0;
+      transition: 0.2s ease all;
+    }
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+
+ul li {
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: $turquoise;
+    color: $black_1;
+  }
+
+  &.active {
+    cursor: default;
+    color: $turquoise;
+
+    &:after {
+      content: "";
+      background-color: $turquoise;
+      width: 3px;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      bottom: 10px;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

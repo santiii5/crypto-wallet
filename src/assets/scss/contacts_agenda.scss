@@ -1,0 +1,61 @@
+.contacts__agenda {
+  padding: 20px;
+  text-align: left;
+  transition: 0.2s ease all;
+  margin: 0 auto;
+  width: 800px;
+  overflow: hidden;
+  max-height: 550px;
+  border-radius:3px;
+  border: 1px solid $grey_3;
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+  .contacts__search {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .contacts__list {
+    margin-top: 15px;
+    border-bottom: 1px solid $grey_3;
+    overflow-y: scroll;
+    max-height: 400px;
+
+    a {
+      width: 100%;
+      padding: 15px 0;
+      display: table;
+      border-top: 1px solid $grey_3;
+      cursor: pointer;
+
+      .contact__address,
+      .contact__alias {
+        display: table-cell;
+      }
+
+      .contact__alias {
+        padding-left: 15px;
+        max-width: 150px;
+
+        &.extended:hover {
+          width: 400px;
+        }
+      }
+
+      .contact__address {
+        padding-right: 15px;
+        text-align: right;
+      }
+
+      &:hover {
+        background-color: lighten($turquoise, 10%);
+      }
+    }
+  }

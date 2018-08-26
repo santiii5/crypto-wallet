@@ -1,0 +1,158 @@
+#wallet {
+  text-align: left;
+  position: relative;
+
+  h1 {
+    display: inline-block;
+  }
+}
+
+ .table__block {
+    display: table;
+    table-layout: fixed;
+
+    > span {
+      display:table-cell;
+      vertical-align:middle;
+      padding: 10px 15px;
+
+      > span {
+        display: block;
+      }
+    }
+  }
+
+  .wallet__content {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 850px;
+
+    .btn {
+      float: right;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  .wallet__account,
+  .wallet__alias {
+    text-transform: none;
+
+    span:nth-child(1) {
+      padding-left: 0;
+    }
+
+    > span {
+      font-size: 16px;
+
+      > span:nth-child(2) {
+        margin-top: 10px;
+        font-size: 12px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .wallet__alias {
+    margin-top: 20px;
+
+    span {
+      display: block;
+    }
+  }
+
+  .wallet__account {
+    margin: 20px 0 30px;
+
+    > span {
+      vertical-align: bottom;
+    }
+  }
+
+  .account__address {
+    min-width: 555px;
+  }
+
+  span.account__balance {
+    font-size: 36px;
+    min-width: 150px;
+    text-align: right;
+
+    span:nth-child(1) {
+      color: $green_dark;
+    }
+  }
+
+  .wallet__movements {
+
+    li {
+      width: 100%;
+      border-bottom:1px solid $grey_3;
+    }
+  }
+
+  .movements__time {
+    width: 60px;
+    min-width: 60px;
+    text-align: right;
+    padding-left: 0!important;
+
+    span {
+      display: block;
+
+      &:nth-child(1) {
+        margin-bottom: 10px;
+        font-size: 10px;
+        color: $grey_1;
+      }
+
+      &:nth-child(2) {
+        font-size: 12px;
+      }
+    }
+  }
+
+    .movements__type {
+      width: 35px;
+      min-width: 35px;
+      text-align: center;
+    }
+
+    .movements__amount {
+      text-align: right;
+    }
+
+    .movements__balance {
+      opacity: 0.5;
+      font-size: 12px;
+    }
+
+    .movements__balance,
+    .movements__amount {
+      width: 60px;
+      min-width: 60px;
+
+      span {
+        margin-top: 5px;
+        font-size: 8px;
+      }
+    }
+
+    .movements__user {
+      vertical-align: bottom;
+      text-transform: none;
+      width: 470px;
+      min-width: 470px;
+      font-size: 14px;
+
+      span {
+        display: block;
+
+        &:nth-child(1) {
+          margin-bottom: 10px;
+        }
+
+        &:nth-child(2) {
+          color: $grey_1;
+        }
+      }
+    }

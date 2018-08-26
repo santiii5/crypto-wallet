@@ -1,0 +1,43 @@
+#top {
+  background-color: $black_1;
+  color: white;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  z-index: 10;
+
+  i,
+  span {
+    cursor: pointer;
+    color: $grey_4;
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+
+  i {
+    vertical-align: middle;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 12px;
+    margin-left: 15px;
+    position: relative;
+    padding-right: 25px;
+
+    &:after {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 0;
+      background-color: $green_dark;
+    }
+  }
+}
