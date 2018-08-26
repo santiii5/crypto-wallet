@@ -6,7 +6,7 @@ This is a technical test project. Made with:
  - SCSS
  - Webpack
 
-Online demo: http://strimin.cronnection.at/
+Online demo: http://radix.cronnection.at/
 
 # Build Setup
 
