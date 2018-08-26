@@ -1,6 +1,6 @@
 # Radix wallet
 
-This is a technical test project. Made with:
+This is a technical test project build with:
 
  - Vue2
  - SCSS
@@ -34,9 +34,7 @@ The goal of this challenge is to evaluate your ability to:
 
 # Functionalities
 
-As an open-ended challenge the possibilities are endless, but a minimum functional layout should be enough code to test.
-
-The functionality implemented until now allows to:
+As an open-ended challenge the possibilities are endless, but a minimum functional layout should be enough code to test. Now you can:
 
 - View your wallet page with your account info
 - Open the transfer panel
@@ -50,21 +48,22 @@ Some features have been developed around the main functionalities, like adding t
 
 The app is composed by 5 components sharing props between parent components and child components.
 The styles are done with SCSS, with global accessible variables and some global styles.
-At the beginning I used a grid layout but later I removed it.
 
 
 # How could this project be improved?
 
-As you know this is my first project with Vue 2, and although I achieved the goal of the test I am not fully concerned about the best ways to structure the code for the best performance and scalability.
-There are still some TODOs to solve, but the main functionalities are fully working.
+This is my first project with Vue 2, and although I've achieved the goal of the test I am not fully concerned about how to structure the code for the best performance, scalability and maintenance.
+There are still some TODOs to solve.
 
 
 # Time invested
+
+Estimated:
 
 - 02:10 - Setup the project
 - 05:45 - Develop the main functionalities
 - 03:50 - Visual styles & layout
 - 03:10 - Refactor, clean
-- 00:55 - Build, readme, upload to server, test
+- 01:05 - Build, readme, upload to server, test
 
-Total time: **15:50** hours
+Total time: **16:00** hours
