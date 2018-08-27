@@ -66,7 +66,7 @@
             </span>
           </span>
           <span v-bind:class="[movement.type === 'in' ? 'green_dark' : 'red_warning', 'movements__amount']">
-            {{ movement.amount}}
+            {{ movement.amount.toFixed(2) }}
             <span>{{ account.coin.toUpperCase() }}</span>
           </span>
           <span class="movements__balance">
@@ -172,7 +172,7 @@
       formatAmount(balance) {
         let balanceNumber = Number(balance)
         balanceNumber = balanceNumber.toFixed(2)
-        console.log(balance, balanceNumber);
+
         return balanceNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
       },
       addTransfer(amount, address, timestamp) {
