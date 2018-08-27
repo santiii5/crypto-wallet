@@ -142,7 +142,7 @@
         inputElement.value = contact.address
         this.checkTransferAddress()
       },
-      // Test is address is 51 chars length
+      // Test if address is 51 chars length
       checkTransferAddress(e) {
         // This method can be called when editing the input or when selectContact (DOM insertion)
         const inputValue = e ? e.target.value : this.$refs.transfer_form["address"].value
