@@ -63,7 +63,7 @@ Estimated:
 - 02:10 - Setup the project
 - 05:45 - Develop the main functionalities
 - 03:50 - Visual styles & layout
-- 03:15 - Refactor, clean
+- 03:30 - Refactor, clean
 - 01:05 - Build, readme, upload to server, test
 
-Total time: **16:05** hours
+Total time: **16:25** hours

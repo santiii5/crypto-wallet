@@ -132,9 +132,10 @@
       },
       // Clear the form fields
       clearForm(form) {
-        form.elements["amount"].value = ''
+        form.elements["amount"].value = null
         form.elements["address"].value = ''
         this.isValidAddress = null
+        this.isValidAmount = null
       },
       // Use contact address for transfer
       selectContact(contact) {
