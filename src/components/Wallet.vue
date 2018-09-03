@@ -93,7 +93,7 @@
           id: 1,
           address: '9hqxmYPYq2DQ31gasR1smJTnUvwYCyokM9FA7t858JnD8WJFiKJ',
           alias: 'Antoñito',
-          coin: 'radix',
+          coin: 'eth',
           balance: 1524.00,
           movements: [
             {

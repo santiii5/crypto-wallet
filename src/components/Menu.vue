@@ -2,7 +2,7 @@
   <nav id="panel" v-bind:class="{collapsed: isCollapsed}">
     <div class="logo">
       <a href="#">
-        <img v-bind:src="logo" alt="Radix wallet">
+        <img v-bind:src="logo" alt="Crypto wallet">
       </a>
     </div>
     <ul class="menu">
