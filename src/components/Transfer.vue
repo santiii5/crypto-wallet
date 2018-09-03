@@ -113,7 +113,7 @@
         const amount = e.target.elements["amount"].value
         const address = e.target.elements["address"].value
 
-        this.showContactsPanel = false
+        this.showContactsPanel && (this.showContactsPanel = false)
         this.transferSuccess()
 
         // Restore form view for new transfer
@@ -142,6 +142,7 @@
         const inputElement = this.$refs.transfer_form["address"]
         inputElement.value = contact.address
         this.checkTransferAddress()
+        this.showContactsPanel = false
       },
       // Test if address is 51 chars length
       checkTransferAddress(e) {
